@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Profile from "../public/random_user.jpg";
+import CoverPhoto from "./components/coverPhoto";
 
 export default function Home() {
 	return (
 		<main>
-			<div>Cover Photo</div>
+			<CoverPhoto />
 			<div>Profile</div>
 
 			<div className="w-32 h-56 overflow-hidden rounded-full">
