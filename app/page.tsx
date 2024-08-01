@@ -3,6 +3,7 @@ import CoverPhoto from "../components/coverPhoto";
 import ProfilePhoto from "@/components/profilePhoto";
 import Buttons from "@/components/buttons";
 import Description from "@/components/description";
+import Footer from "@/components/footer";
 
 export default function Home() {
 	return (
@@ -19,6 +20,7 @@ export default function Home() {
 			<Icons />
 			<Buttons />
 			<Description />
+			<Footer />
 		</main>
 	);
 }
