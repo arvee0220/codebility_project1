@@ -6,9 +6,9 @@ import messenger from "../public/messenger_d.svg";
 import phone from "../public/phone_d.svg";
 import twitter from "../public/twitter_d.svg";
 
-const svgIcons = [envelope, facebook, globe, messenger, phone, twitter];
+const svgIcons: string[] = [envelope, facebook, globe, messenger, phone, twitter];
 
-function Icons() {
+const Icons: React.FC = () => {
 	return (
 		<div className="flex justify-center items-center">
 			<div className="grid grid-cols-3 gap-5 p-2">
@@ -18,6 +18,6 @@ function Icons() {
 			</div>
 		</div>
 	);
-}
+};
 
 export default Icons;

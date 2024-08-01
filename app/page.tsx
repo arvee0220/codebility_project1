@@ -6,7 +6,7 @@ import Description from "@/components/description";
 
 export default function Home() {
 	return (
-		<main className="min-h-screen">
+		<main>
 			<CoverPhoto />
 			<ProfilePhoto />
 			<div className="text-center p-5">

@@ -1,6 +1,10 @@
 import Image from "next/image";
 
-const services = [
+type SvcImage = {
+	imageUrl: string;
+};
+
+const services: SvcImage[] = [
 	{
 		imageUrl:
 			"https://images.unsplash.com/photo-1554260570-c7068c223285?q=80&w=2152&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -27,7 +31,7 @@ const services = [
 	},
 ];
 
-function Description() {
+const Description: React.FC = () => {
 	return (
 		<div className="px-5 md:px-10 md:mx-10">
 			<h1 className="text-center text-[50px]">Profit Pioneer</h1>
@@ -44,7 +48,7 @@ function Description() {
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iste quis accusamus
 				ad provident odio non impedit enim hic. Mollitia?
 			</p>
-			<div className="flex justify-center items-center">
+			<div className="flex justify-center items-center my-10">
 				<div className="grid grid-cols-2 md:grid-cols-3 justify-center gap-5">
 					{services.map((service, idx) => (
 						<div key={idx} className="relative w-48 h-48 md:w-48 md:h-48">
@@ -61,6 +65,6 @@ function Description() {
 			</div>
 		</div>
 	);
-}
+};
 
 export default Description;
