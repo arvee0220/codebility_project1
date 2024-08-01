@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This project is a clone of a specific profile page. The aim of this project is to replicate the design and functionality of the profile page from [Original Profile Page Name] (provide a URL if applicable). This clone is created using [Next.js](https://nextjs.org/) and styled with [Tailwind CSS](https://tailwindcss.com/).
+This project is a clone of a specific profile page. The aim of this project is to replicate the design and functionality of the profile page from codebility. This clone is created using [Next.js](https://nextjs.org/) and styled with [Tailwind CSS](https://tailwindcss.com/).
 
 ## Features
 
