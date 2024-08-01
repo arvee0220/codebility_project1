@@ -11,7 +11,7 @@ const svgIcons = [envelope, facebook, globe, messenger, phone, twitter];
 function Icons() {
 	return (
 		<div className="flex justify-center items-center">
-			<div className="grid grid-cols-3 gap-2 p-2">
+			<div className="grid grid-cols-3 gap-5 p-2">
 				{svgIcons.map((icons, idx) => (
 					<Image src={icons} alt="svg icons" width={20} height={20} key={idx} />
 				))}
