@@ -51,7 +51,7 @@ const Description: React.FC = () => {
 			<div className="flex justify-center items-center my-10">
 				<div className="grid grid-cols-2 md:grid-cols-3 justify-center gap-5">
 					{services.map((service, idx) => (
-						<div key={idx} className="relative w-48 h-48 md:w-48 md:h-48">
+						<div key={idx} className="relative w-32 h-32 md:w-48 md:h-48">
 							<Image
 								src={service.imageUrl}
 								alt="services"
