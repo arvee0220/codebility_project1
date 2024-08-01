@@ -1,6 +1,13 @@
 import { Button } from "@nextui-org/button";
 
-const buttonText = [
+type ButtonType = {
+	text: string;
+	color: string;
+	border: string;
+	bg: string;
+};
+
+const buttonText: ButtonType[] = [
 	{ text: "Email Me", color: "text-slate-950", border: "border-transparent", bg: "bg-slate-300" },
 	{
 		text: "Save Contact",

@@ -2,10 +2,11 @@ import Icons from "@/components/socMedIcons";
 import CoverPhoto from "../components/coverPhoto";
 import ProfilePhoto from "@/components/profilePhoto";
 import Buttons from "@/components/buttons";
+import Description from "@/components/description";
 
 export default function Home() {
 	return (
-		<main>
+		<main className="min-h-screen">
 			<CoverPhoto />
 			<ProfilePhoto />
 			<div className="text-center p-5">
@@ -17,6 +18,7 @@ export default function Home() {
 			</div>
 			<Icons />
 			<Buttons />
+			<Description />
 		</main>
 	);
 }
