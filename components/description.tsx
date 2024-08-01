@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 const services = [
 	{
 		imageUrl:
-			"https://plus.unsplash.com/premium_photo-1664476845274-27c2dabdd7f0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"https://images.unsplash.com/photo-1554260570-c7068c223285?q=80&w=2152&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 	},
 	{
 		imageUrl:
@@ -9,14 +11,20 @@ const services = [
 	},
 	{
 		imageUrl:
-			"https://plus.unsplash.com/premium_photo-1681487769650-a0c3fbaed85a?q=80&w=2155&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"https://images.unsplash.com/photo-1613442301239-ea2478101ea7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 	},
 	{
 		imageUrl:
-			"https://plus.unsplash.com/premium_photo-1670249421308-15ae3965c326?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 	},
-	{ imageUrl: "" },
-	{ imageUrl: "" },
+	{
+		imageUrl:
+			"https://images.unsplash.com/photo-1483129804960-cb1964499894?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+	},
+	{
+		imageUrl:
+			"https://images.unsplash.com/photo-1625236239092-8d15fbff5420?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+	},
 ];
 
 function Description() {
@@ -36,6 +44,21 @@ function Description() {
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iste quis accusamus
 				ad provident odio non impedit enim hic. Mollitia?
 			</p>
+			<div className="flex justify-center items-center">
+				<div className="grid grid-cols-2 md:grid-cols-3 justify-center gap-5">
+					{services.map((service, idx) => (
+						<div key={idx} className="relative w-48 h-48 md:w-48 md:h-48">
+							<Image
+								src={service.imageUrl}
+								alt="services"
+								layout="fill"
+								objectFit="cover"
+								className="rounded-lg"
+							/>
+						</div>
+					))}
+				</div>
+			</div>
 		</div>
 	);
 }
