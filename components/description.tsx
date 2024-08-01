@@ -1,6 +1,6 @@
 function Description() {
 	return (
-		<div className="p-5 md:px-10 md:mx-10 h-full">
+		<div className="px-5 md:px-10 md:mx-10">
 			<h1 className="text-center text-[50px]">Profit Pioneer</h1>
 			<h3 className="py-2">Company Background</h3>
 			<p className="py-2">
