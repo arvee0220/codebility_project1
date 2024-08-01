@@ -19,15 +19,24 @@ To get started with this project locally, follow these steps:
 
 ```bash
     git clone https://github.com/arvee0220/codebility_project1.git
+```
 
-2. **Navigate to the Project Directory
+2. **Navigate to the Project Directory**
+
+```bash
     cd codebility_project1
+```
 
-3. **Install Dependencies
+3. **Install Dependencies**
+
+```bash
     pnpm i -- if you're using pnpm
     npm i -- if you're using npm
+```
 
-4. **Run the Development Server
-    pnpm dev -- if you're using pnpm
-    npm run dev -- if you're using npm
+4. **Run the Development Server**
+
+```bash
+   pnpm dev -- if you're using pnpm
+   npm run dev -- if you're using npm
 ```
