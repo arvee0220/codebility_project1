@@ -1,13 +1,14 @@
 import Icons from "@/components/socMedIcons";
 import CoverPhoto from "../components/coverPhoto";
 import ProfilePhoto from "@/components/profilePhoto";
+import Buttons from "@/components/buttons";
 
 export default function Home() {
 	return (
 		<main>
 			<CoverPhoto />
 			<ProfilePhoto />
-			<div className="text-center">
+			<div className="text-center p-5">
 				<h1 className="font-bold text-2xl">Hussain Watkins</h1>
 				<h3 className="pt-2 font-bold text-neutral-300 text-lg">CEO</h3>
 				<p className="text-sm text-gray-500">
@@ -15,6 +16,7 @@ export default function Home() {
 				</p>
 			</div>
 			<Icons />
+			<Buttons />
 		</main>
 	);
 }

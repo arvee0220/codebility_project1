@@ -10,12 +10,13 @@
 		font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
 			Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 		@apply bg-zinc-900 text-neutral-300;
+		height: 100vh;
 	}
 
 	h1,
 	h2,
 	h3 {
-		@apply text-green-600;
+		@apply text-lime-500;
 	}
 
 	p {
