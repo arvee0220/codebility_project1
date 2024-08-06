@@ -53,7 +53,7 @@ const Description: React.FC = () => {
 					{services.map(({imageUrl}, idx) => (
 						<div key={idx} className="relative w-32 h-32 md:w-48 md:h-48">
 							<Image
-								src={service.imageUrl}
+								src={imageUrl}
 								alt="services"
 								layout="fill"
 								objectFit="cover"
