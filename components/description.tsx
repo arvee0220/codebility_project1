@@ -33,8 +33,8 @@ const services: SvcImage[] = [
 
 const Description: React.FC = () => {
 	return (
-		<div className="px-5 md:px-10 md:mx-10">
-			<h1 className="text-center text-[50px] py-2 md:mt-4">Profit Pioneer</h1>
+		<div className="flex flex-col px-5 md:px-10 md:mx-10">
+			<h1 className="text-center text-[50px] py-2 md:my-4">Profit Pioneer</h1>
 			<h3 className="py-2">Company Background</h3>
 			<p className="py-2">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos optio expedita
@@ -51,7 +51,7 @@ const Description: React.FC = () => {
 			<div className="flex justify-center items-center my-10">
 				<div className="grid grid-cols-2 md:grid-cols-3 justify-center gap-5">
 					{services.map(({imageUrl}, idx) => (
-						<div key={idx} className="relative w-32 h-32 md:w-48 md:h-48">
+						<div key={idx} className="relative w-32 h-32 md:w-60 md:h-60">
 							<Image
 								src={imageUrl}
 								alt="services"
