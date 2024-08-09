@@ -20,10 +20,10 @@
 	h1,
 	h2,
 	h3 {
-		@apply text-lime-500;
+		@apply text-lime-500 md:text-xl md:pt-4;
 	}
 
 	p {
-		@apply text-sm;
+		@apply text-sm md:text-base;
 	}
 }

@@ -34,7 +34,7 @@ const services: SvcImage[] = [
 const Description: React.FC = () => {
 	return (
 		<div className="px-5 md:px-10 md:mx-10">
-			<h1 className="text-center text-[50px]">Profit Pioneer</h1>
+			<h1 className="text-center text-[50px] py-2 md:mt-4">Profit Pioneer</h1>
 			<h3 className="py-2">Company Background</h3>
 			<p className="py-2">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos optio expedita
