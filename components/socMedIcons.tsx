@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import envelope from "../public/envelope_d.svg";
 import facebook from "../public/facebook_d.svg";
 import globe from "../public/globe_d.svg";
@@ -8,7 +8,7 @@ import twitter from "../public/twitter_d.svg";
 import Link from "next/link";
 
 type SocMedIcons = {
-  img: string;
+  img: StaticImageData;
   socMed: string;
   link: string;
 };
